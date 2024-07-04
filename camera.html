@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Chat</title>
+    <link rel="stylesheet" href="camera.css">
+    <link class="logo" rel="icon" type="image/x-icon" href="GyaanSaras.png">
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <div class="video-box">
+                <video id="localVideo" autoplay muted></video>
+                <button id="localFullscreen" class="fullscreen-button">Fullscreen</button>
+            </div>
+            <div class="video-box">
+                <video id="remoteVideo" autoplay></video>
+                <button id="remoteFullscreen" class="fullscreen-button">Fullscreen</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="toggleVideo">Turn Video Off</button>
+            <button id="toggleAudio">Turn Audio Off</button>
+        </div>
+    </div>
+    <script src="camera.js"></script>
+</body>
+</html>
