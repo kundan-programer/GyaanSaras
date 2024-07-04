@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Sign Up</title>
+  <link class="logo" rel="icon" type="image/x-icon" href="GyaanSaras_2.png">
+  <link rel="stylesheet" href="Login.css">
+</head>
+
+<body id="Body">
+  <div class="container">
+    <div class="form-container">
+      <form id="signInForm" class="active-form">
+        <h1 class="sign">Sign In</h1>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+
+        <div class="forgot" id="forgot">
+          <p>Forgot your Password?</p>
+        </div>
+
+        <button type="submit">Sign In</button>
+        <!-- <button type="button" class="ghost" id="toSignUp">Don't have an account? Sign Up</button> -->
+
+
+        <button type="button">
+          <p>Don't have an account? <a class="ghost" id="toSignUp" href="#" style="color:dodgerblue">Sign Up</a></p>
+        </button>
+
+      </form>
+
+      <form id="signUpForm" class="inactive-form">
+        <h1>Create Account</h1>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+        <input type="number" placeholder="Mobile No." required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+
+        <button type="button">
+          <p>Already have an account? <a class="ghost" id="toSignIn" href="#" style="color:dodgerblue">Sign
+              In</a></p>
+        </button>
+
+        <p>By creating an account you agree to our <a class="Term_Condition1" id="Term_condition" href="#"
+            style="color:dodgerblue">Terms &
+            Privacy</a></p>
+
+
+      </form>
+    </div>
+  </div>
+  <script src="Login.js"></script>
+</body>
+
+</html>
